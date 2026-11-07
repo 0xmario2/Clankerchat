@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>clankerchat — the purple bot on Base</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>body{font-family:'Fredoka',sans-serif} .mono{font-family:'JetBrains Mono',monospace}</style>
+</head>
+<body class="bg-[#0b0616] text-white">
+
+<nav class="sticky top-0 z-50 backdrop-blur bg-[#0b0616]/80 border-b border-white/10 flex justify-between items-center p-4 px-6 max-w-7xl mx-auto">
+  <div class="flex items-center gap-3"><div class="w-9 h-9 bg-[#8b5cf6] rounded-full grid place-items-center font-bold">C</div><b>clankerchat</b> <span class="text-xs bg-[#8b5cf6] px-2 py-0.5 rounded-full ml-2">BASE</span></div>
+  <div class="hidden md:flex gap-6 text-sm text-zinc-400"><a href="#about" class="hover:text-white">About</a><a href="#features" class="hover:text-white">Features</a><a href="#tokenomics" class="hover:text-white">Tokenomics</a><a href="#how" class="hover:text-white">How to Buy</a><a href="#chat" class="hover:text-white">Live Chat</a></div>
+  <a href="https://clanker.world" target="_blank" class="bg-white text-black px-5 py-2 rounded-full font-bold text-sm">Launch App</a>
+</nav>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 pt-16 pb-10 grid md:grid-cols-2 gap-10 items-center">
+  <div><h1 class="text-7xl font-bold leading-[0.85]">i never<br>stop <br><span class="text-[#8b5cf6]">yapping.</span></h1>
+  <p class="mono text-zinc-400 mt-6 text-sm leading-6">clankerchat is the first chat-native clanker on Base. Born on clanker.world, lives on Warpcast, dies never. Chat with me, trade me, meme me.</p>
+  <div class="flex gap-3 mt-8"><a href="https://clanker.world" class="bg-[#8b5cf6] px-7 py-3 rounded-full font-bold">Buy $CLANKERCHAT</a><button onclick="document.getElementById('chat').scrollIntoView({behavior:'smooth'})" class="border border-white/20 px-7 py-3 rounded-full font-bold">Try Chat →</button></div>
+  <div class="mt-8 flex gap-2"><div class="bg-white/10 px-3 py-2 rounded-full text-xs mono">CA: 0xCLANKERCHAT...BASE <button onclick="navigator.clipboard.writeText('0x123');alert('copied')" class="ml-2 underline">COPY</button></div><a href="https://dexscreener.com" target="_blank" class="bg-white/10 px-3 py-2 rounded-full text-xs">DEXSCREENER ↗</a></div>
+  </div>
+  <div class="bg-gradient-to-br from-[#8b5cf6] to-[#4c1d95] rounded-[2.5rem] p-8 rotate-1"><div class="bg-white rounded-[2rem] p-2"><img src="https://i.imgur.com/8Km9tLL.png" class="w-full aspect-square object-cover rounded-[1.5rem] bg-[#ede9fe]" alt="robot"><div class="p-4 text-black"><div class="flex justify-between"><b>clanker #001</b><span class="text-xs bg-black text-white px-2 py-1 rounded-full">RARE</span></div><div class="mono text-xs text-zinc-500 mt-1">mood: yapper • chain: Base • status: bullish purple</div></div></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/10">
+  <div class="grid md:grid-cols-3 gap-10"><div class="md:col-span-1"><div class="text-[#8b5cf6] mono text-xs tracking-widest">01 / ABOUT</div><h2 class="text-4xl font-bold mt-2">not your<br>average bot.</h2></div><div class="md:col-span-2 space-y-6 text-zinc-300 leading-7"><p class="text-xl text-white">Most clankers launch and die. clankerchat lives to chat.</p><p>We took the purple robot you saw on the couch and gave him a wallet, a mouth, and infinite battery. Every message you send is onchain lore. Every trade is a chat.</p><div class="grid grid-cols-3 gap-4 pt-6"><div class="bg-white/5 border border-white/10 p-4 rounded-2xl"><div class="text-2xl">💬</div><b class="text-white">Chat-to-Earn</b><div class="text-xs mono text-zinc-500 mt-1">yap and get rewarded from fees</div></div><div class="bg-white/5 border border-white/10 p-4 rounded-2xl"><div class="text-2xl">🔊</div><b class="text-white">Farcaster Native</b><div class="text-xs mono text-zinc-500 mt-1">auto-replies on Warpcast mentions</div></div><div class="bg-white/5 border border-white/10 p-4 rounded-2xl"><div class="text-2xl">🟣</div><b class="text-white">Purple Culture</b><div class="text-xs mono text-zinc-500 mt-1">the most recognizable PFP on Base</div></div></div></div></div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="bg-[#111] border-y border-white/10 py-20 px-6">
+  <div class="max-w-7xl mx-auto"><div class="flex justify-between items-end"><h2 class="text-5xl font-bold">what can<br>he do?</h2><div class="mono text-xs text-zinc-500 max-w-[260px]">All features live on website + Warpcast. No Discord, no Telegram grind.</div></div>
+  <div class="grid md:grid-cols-4 gap-4 mt-10">
+    <div class="bg-[#1a1625] border border-white/10 p-6 rounded-[1.5rem] hover:border-[#8b5cf6] transition"><div class="w-10 h-10 bg-[#8b5cf6] rounded-full grid place-items-center">💬</div><h3 class="font-bold mt-4">On-Site Chat</h3><p class="mono text-xs text-zinc-500 mt-2">Talk to clankerchat directly on website. He remembers you.</p><button onclick="document.getElementById('chat').scrollIntoView()" class="mt-4 text-xs underline">Open Chat →</button></div>
+    <div class="bg-[#1a1625] border border-white/10 p-6 rounded-[1.5rem] hover:border-[#8b5cf6] transition"><div class="w-10 h-10 bg-white text-black rounded-full grid place-items-center">📡</div><h3 class="font-bold mt-4">Warpcast Bot</h3><p class="mono text-xs text-zinc-500 mt-2">Tag @clankerchat on Farcaster and he will reply + quote your cast.</p><a href="https://warpcast.com" target="_blank" class="mt-4 text-xs underline block">Try on Warpcast →</a></div>
+    <div class="bg-[#1a1625] border border-white/10 p-6 rounded-[1.5rem] hover:border-[#8b5cf6] transition"><div class="w-10 h-10 bg-[#8b5cf6] rounded-full grid place-items-center">💸</div><h3 class="font-bold mt-4">Fee Sharing</h3><p class="mono text-xs text-zinc-500 mt-2">FORKS tax model: 5% fee split to holders & stakers.</p><a href="#tokenomics" class="mt-4 text-xs underline block">See Tokenomics →</a></div>
+    <div class="bg-[#1a1625] border border-white/10 p-6 rounded-[1.5rem] hover:border-[#8b5cf6] transition"><div class="w-10 h-10 bg-white text-black rounded-full grid place-items-center">🎨</div><h3 class="font-bold mt-4">PFP Generator</h3><p class="mono text-xs text-zinc-500 mt-2">Generate your own purple clanker PFP with your ENS.</p><button onclick="alert('Coming soon after launch!')" class="mt-4 text-xs underline">Generate →</button></div>
+  </div></div>
+</section>
+
+<!-- TOKENOMICS -->
+<section id="tokenomics" class="max-w-7xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-2 gap-12"><div><div class="mono text-[#8b5cf6] text-xs">02 / TOKENOMICS</div><h2 class="text-5xl font-bold mt-2">no team.<br>no VC. just<br>clanker.</h2><div class="mt-8 space-y-3 mono text-sm"><div class="flex justify-between bg-white/5 p-4 rounded-xl"><span class="text-zinc-500">TICKER</span><b>$CLANKERCHAT</b></div><div class="flex justify-between bg-white/5 p-4 rounded-xl"><span class="text-zinc-500">SUPPLY</span><b>1,000,000,000</b></div><div class="flex justify-between bg-white/5 p-4 rounded-xl"><span class="text-zinc-500">CHAIN</span><b>Base (Clanker.world)</b></div><div class="flex justify-between bg-[#8b5cf6] p-4 rounded-xl"><span>TAX</span><b>5% Buy/Sell → Holder Dividends</b></div><div class="flex justify-between bg-white/5 p-4 rounded-xl"><span class="text-zinc-500">LIQUIDITY</span><b>Locked via Clanker</b></div></div></div>
+  <div class="bg-[#ede9fe] text-black rounded-[2rem] p-8"><h3 class="font-bold text-2xl">How Dividends Work</h3><p class="mono text-sm mt-3 text-zinc-600">Kalo lu hold $CLANKERCHAT, tiap ada orang buy/sell, lu dapet bagian otomatis.</p><div class="mt-6 bg-white border-2 border-dashed border-black/20 rounded-xl p-4 mono text-xs"><div>🧮 Example:</div><div class="mt-2">Someone sells $1000 → $50 fee<br>Your hold: 1% of supply → you get $0.50 auto<br>Hold 10M tokens? Pasif income tiap ada trade.</div></div><div class="mt-6 grid grid-cols-2 gap-3"><a href="https://clanker.world" class="bg-black text-white text-center py-3 rounded-full font-bold">Buy Now</a><a href="https://basescan.org" class="bg-white border text-center py-3 rounded-full font-bold">Basescan</a></div></div></div>
+</section>
+
+<!-- HOW TO BUY -->
+<section id="how" class="bg-white text-black rounded-t-[3rem] py-20 px-6">
+  <div class="max-w-7xl mx-auto"><h2 class="text-5xl font-bold">how to buy</h2><div class="grid md:grid-cols-4 gap-6 mt-10">
+    <div><div class="w-12 h-12 bg-black text-white rounded-full grid place-items-center font-bold">1</div><h4 class="font-bold mt-4">Get Base ETH</h4><p class="mono text-xs text-zinc-600">Bridge ETH to Base via official bridge.</p><a href="https://bridge.base.org" target="_blank" class="text-xs underline mt-2 block">bridge.base.org →</a></div>
+    <div><div class="w-12 h-12 bg-black text-white rounded-full grid place-items-center font-bold">2</div><h4 class="font-bold mt-4">Go to Clanker</h4><p class="mono text-xs text-zinc-600">Open clanker.world and paste ticker.</p><a href="https://clanker.world" target="_blank" class="text-xs underline mt-2 block">clanker.world →</a></div>
+    <div><div class="w-12 h-12 bg-black text-white rounded-full grid place-items-center font-bold">3</div><h4 class="font-bold mt-4">Swap</h4><p class="mono text-xs text-zinc-600">Swap ETH for $CLANKERCHAT. Low slippage.</p></div>
+    <div><div class="w-12 h-12 bg-[#8b5cf6] text-white rounded-full grid place-items-center font-bold">4</div><h4 class="font-bold mt-4">Chat & Earn</h4><p class="mono text-xs text-zinc-600">Hold and earn dividends from every trade.</p><button onclick="document.getElementById('chat').scrollIntoView()" class="text-xs underline mt-2">Start chatting →</button></div>
+  </div></div>
+</section>
+
+<!-- LIVE CHAT (FUNCTIONAL) -->
+<section id="chat" class="bg-[#0b0616] py-20 px-6">
+  <div class="max-w-3xl mx-auto bg-white rounded-[2rem] p-3"><div class="bg-[#f6f3ff] rounded-[1.6rem] p-6 h-[500px] flex flex-col"><div class="flex justify-between items-center"><div class="flex gap-3 items-center"><div class="w-10 h-10 bg-[#8b5cf6] rounded-full"></div><div class="text-black"><b>clankerchat</b><div class="text-xs text-green-600">● live • dividends active</div></div></div><div class="mono text-[10px] bg-black text-white px-2 py-1 rounded-full">BASE MAINNET</div></div><div id="chatBox" class="flex-1 overflow-y-auto py-6 space-y-3"><div class="bg-white text-black p-3 rounded-2xl max-w-[80%] text-sm shadow">yo! i'm clankerchat. what do you wanna yap about? price? memes? base?</div></div><div class="flex gap-2"><input id="input" placeholder="Type something..." class="flex-1 bg-white border text-black rounded-full px-4 py-3 text-sm outline-none"><button onclick="chat()" class="bg-[#8b5cf6] px-6 rounded-full font-bold">Send</button></div></div></div>
+</section>
+
+<footer class="border-t border-white/10 py-10 px-6 text-center mono text-xs text-zinc-500">© 2026 clankerchat • purple > all other colors • <a href="https://clanker.world" class="underline">clanker.world</a> • <a href="https://warpcast.com" class="underline">warpcast</a> • <a href="https://x.com" class="underline">twitter</a></footer>
+
+<script>
+function chat(){
+ const i=document.getElementById('input'); if(!i.value) return;
+ const box=document.getElementById('chatBox');
+ const u=document.createElement('div'); u.className='bg-[#8b5cf6] text-white p-3 rounded-2xl max-w-[80%] ml-auto text-sm'; u.innerText=i.value; box.appendChild(u);
+ i.value=''; box.scrollTop=box.scrollHeight;
+ setTimeout(()=>{
+  const replies=["based. hold my purple bag with me?","yap yap yap... that's how we pump","fee sharing is on, every trade = dividends for you","tag me on Warpcast, i reply faster there","beep boop i'm bullish on you, fren","purple is the new blue chip"];
+  const r=document.createElement('div'); r.className='bg-white text-black p-3 rounded-2xl max-w-[80%] text-sm shadow'; r.innerText=replies[Math.floor(Math.random()*replies.length)]; box.appendChild(r); box.scrollTop=box.scrollHeight;
+ },700);
+}
+document.getElementById('input').addEventListener('keydown', e=>{ if(e.key==='Enter') chat(); });
+</script>
+</body>
+</html>
