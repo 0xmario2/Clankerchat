@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLANKER CHAT CLUB - The chat layer for Clankers on HYPE</title>
+<meta name="description" content="CLANKER CHAT CLUB - The chat layer for Clankers on HYPE. Not live yet.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0614;color:#fff;font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
+nav{position:fixed;top:0;width:100%;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;z-index:10;background:rgba(10,6,20,0.8);backdrop-filter:blur(20px);border-bottom:1px solid #ffffff0a}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;line-height:1.1;letter-spacing:-0.5px}
+.logo img{width:38px;height:38px;border-radius:50%;border:2px solid #a78bfa}
+.btn{padding:12px 26px;border-radius:100px;background:#a78bfa;color:#0a0614;text-decoration:none;font-weight:700;font-size:14px;display:inline-flex;align-items:center;transition:0.2s;box-shadow:0 4px 20px #a78bfa44}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px #a78bfa66}
+.btn-outline{background:transparent;border:1.5px solid #a78bfa44;color:#a78bfa;box-shadow:none;margin-left:12px}
+.hero{min-height:100vh;padding:120px 6% 60px;display:flex;align-items:center;gap:50px;flex-wrap:wrap;position:relative}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse, #a78bfa18 0%, transparent 70%);pointer-events:none}
+.hero-text{flex:1.2;min-width:320px;z-index:2}
+.badge{display:inline-flex;background:#a78bfa15;border:1px solid #a78bfa30;color:#a78bfa;padding:6px 14px;border-radius:100px;font-size:11px;letter-spacing:1px;margin-bottom:20px}
+.hero-text h1{font-size:clamp(36px,6vw,64px);line-height:0.9;letter-spacing:-2px;margin-bottom:20px}
+.hero-text h1 span{color:#a78bfa}
+.hero-text p{color:#c4b5fd99;font-size:18px;line-height:1.6;max-width:460px;margin-bottom:32px}
+.chat-preview{background:#15102a;border:1px solid #ffffff0f;border-radius:16px;padding:16px;margin-top:20px;max-width:380px;font-family:monospace;font-size:13px}
+.chat-line{display:flex;gap:10px;margin:8px 0;opacity:0;animation:fadeIn 0.5s forwards}
+.chat-line:nth-child(1){animation-delay:0.5s}.chat-line:nth-child(2){animation-delay:1s}.chat-line:nth-child(3){animation-delay:1.5s}
+@keyframes fadeIn{to{opacity:1;transform:translateY(0)}from{opacity:0;transform:translateY(10px)}}
+.hero-img{flex:1;min-width:320px;text-align:center;position:relative;z-index:2}
+.hero-img .wrap{width:380px;height:380px;margin:0 auto;border-radius:50%;background:radial-gradient(circle at 30% 30%, #2a204a, #0a0614);padding:6px;box-shadow:0 0 80px #a78bfa30, inset 0 0 40px #a78bfa15;animation:float 4s ease-in-out infinite}
+.hero-img img{width:100%;height:100%;border-radius:50%;object-fit:cover;background:#1a102e}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1deg)}}
+.features{padding:80px 6%;border-top:1px solid #ffffff08;background:linear-gradient(180deg, #0a0614 0%, #0f0a1f 100%)}
+.section-head{text-align:center;max-width:600px;margin:0 auto 50px}
+.section-head h2{font-size:32px;letter-spacing:-1px}
+.section-head p{color:#a78bfa99;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1100px;margin:0 auto}
+.card{background:linear-gradient(180deg, #1a1430 0%, #15102a 100%);border:1px solid #a78bfa1a;border-radius:24px;padding:28px;transition:0.3s}
+.card:hover{border-color:#a78bfa44;transform:translateY(-4px)}
+.card .icon{width:48px;height:48px;background:#a78bfa15;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.footer{padding:40px 6%;text-align:center;color:#6b5b9a;font-size:12px;letter-spacing:1px;border-top:1px solid #ffffff08}
+@media(max-width:768px){nav{padding:14px 5%}.hero{padding:100px 5% 40px;flex-direction:column-reverse;text-align:center}.hero-text p,.chat-preview{margin-left:auto;margin-right:auto}.hero-img .wrap{width:300px;height:300px}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo"><img src="https://i.ibb.co.com/QvwKFvpw/IMG-20261108-WA4764.jpg" alt=""> CLANKERCHAT<br>CLUB</div>
+<a class="btn" href="https://x.com/clankerchatclub" target="_blank">Follow Club ↗</a>
+</nav>
+
+<div class="hero">
+<div class="hero-text">
+<div class="badge">● POWERED BY HYPE • PRE-LAUNCH</div>
+<h1>CLANKERCHAT<br><span>CLUB</span></h1>
+<p>The chat layer for Clankers on HYPE. Real-time chat, trading, and community for the next generation of onchain traders.</p>
+<div>
+<a class="btn" href="https://x.com/clankerchatclub" target="_blank">Join the Club →</a>
+<a class="btn btn-outline" href="#">Read Docs</a>
+</div>
+<div class="chat-preview">
+<div class="chat-line"><span style="color:#6b5b9a">[16:34]</span> <span style="color:#a78bfa">clanker_01:</span> <span>wen chat?</span></div>
+<div class="chat-line"><span style="color:#6b5b9a">[16:34]</span> <span style="color:#ff7a7a">you:</span> <span>soon. clankerchat.fun</span></div>
+<div class="chat-line"><span style="color:#6b5b9a">[16:35]</span> <span style="color:#a78bfa">clanker_02:</span> <span>clank clank 🤖</span></div>
+</div>
+<div style="margin-top:20px;font-size:10px;color:#4a3a6a;letter-spacing:2px">NOT LIVE YET • ANY CA IS FAKE • clankerchat.fun</div>
+</div>
+
+<div class="hero-img">
+<div class="wrap"><img src="https://i.ibb.co.com/QvwKFvpw/IMG-20261108-WA4764.jpg" alt="ClankerChat"></div>
+</div>
+</div>
+
+<div class="features">
+<div class="section-head">
+<h2>Everything you need to clank smarter</h2>
+<p>Built for the HYPE ecosystem. Fast. Secure. Fun.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="icon">💬</div><h3>Chat</h3><p style="color:#c4b5fd88;margin-top:8px;font-size:14px;line-height:1.6">Real-time onchain chat rooms. Join clans, talk markets, share alpha with your crew. No discord lag.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Trade</h3><p style="color:#c4b5fd88;margin-top:8px;font-size:14px;line-height:1.6">Swap, track, and snipe tokens directly in chat. Seamless trades powered by HYPE. Chat is the terminal.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Clank</h3><p style="color:#c4b5fd88;margin-top:8px;font-size:14px;line-height:1.6">Earn clanks, unlock roles, and build reputation. Rewards for active community members, not bots.</p></div>
+</div>
+</div>
+
+<div class="footer">© 2026 CLANKER CHAT CLUB • BUILT FOR HYPE • X.COM/CLANKERCHATCLUB • NOT LIVE YET</div>
+</body>
+</html>
