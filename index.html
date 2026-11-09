@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLANKERCHAT - The chat layer for Clankers on HYPE</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f0a1f;color:#fff;font-family:'Space Grotesk',sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;position:relative}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(600px at 50% -10%, #a78bfa22, transparent), radial-gradient(800px at 80% 90%, #ff5a5a15, transparent);z-index:-1}
+.logo-wrap{width:180px;height:180px;border-radius:50%;padding:4px;background:linear-gradient(135deg,#a78bfa,#ff6b6b);box-shadow:0 0 60px #a78bfa55;margin-bottom:32px;animation:float 3s ease-in-out infinite}
+.logo-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;background:#1a102e;display:block}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+h1{font-size:52px;letter-spacing:-1.5px;line-height:1}
+h1 span{color:#a78bfa}
+.tagline{margin-top:12px;letter-spacing:5px;color:#a78bfa;font-size:13px;font-weight:700}
+.desc{margin-top:18px;color:#c4b5fdcc;font-size:17px;max-width:360px;text-align:center;line-height:1.5}
+.btn{margin-top:32px;background:#a78bfa;color:#0f0a1f;padding:16px 32px;border-radius:100px;text-decoration:none;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:.2s;box-shadow:0 8px 24px #a78bfa44}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 12px 32px #a78bfa66}
+.warn{margin-top:48px;font-size:11px;letter-spacing:2px;color:#6b5b9a;text-transform:uppercase}
+.grid{position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);background-size:40px 40px;z-index:-2;mask-image:radial-gradient(ellipse at center, black 40%, transparent 80%)}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="logo-wrap">
+<img src="https://i.ibb.co.com/QvwKFvpw/IMG-20261108-WA4764.jpg" alt="ClankerChat">
+</div>
+<h1>CLANKER<span>CHAT</span></h1>
+<div class="tagline">COMING SOON</div>
+<div class="desc">The chat layer for Clankers on HYPE.<br>Talk. Trade. Clank together.</div>
+<a class="btn" href="https://x.com/clankerchatclub" target="_blank">Follow @clankerchatclub ↗</a>
+<div class="warn">Not live yet • Any CA is fake • clankerchat.fun</div>
+</body>
+</html>
