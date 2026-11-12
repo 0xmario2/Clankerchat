@@ -76,32 +76,32 @@ h1 .red{color:#ff5a5a;text-shadow:0 0 50px rgba(255,90,90,0.4)}
       <div class="msg"><div class="avatar" style="background:#8a5aff"></div><div class="bubble green">LFG! Bought 1M $CLANKERCHAT 💬</div></div>
     </div>
     <div class="ca-box">
-      <span id="ca">0x695574288D3fb02a4C3B5124D33B00B9D729Cccc</span>
+      <span id="ca">0x0080146f52555ff5cdDA48c167215b78334dCCcc</span>
       <button onclick="navigator.clipboard.writeText(document.getElementById('ca').innerText);this.innerText='COPIED!';setTimeout(()=>this.innerText='COPY',1800)">COPY</button>
     </div>
     <div class="btns">
-      <a href="https://www.clanker.world/clanker/0x695574288D3fb02a4C3B5124D33B00B9D729Cccc" target="_blank" class="btn btn-red">View on Clanker</a>
+      <a href="https://www.clanker.world/clanker/0x0080146f52555ff5cdDA48c167215b78334dCCcc" target="_blank" class="btn btn-red">View on Clanker</a>
       <a href="https://t.me/clankerchatclub" target="_blank" class="btn btn-ghost">Join Telegram</a>
-      <a href="https://dexscreener.com/base/0x695574288D3fb02a4C3B5124D33B00B9D729Cccc" target="_blank" class="btn btn-ghost">DexScreener</a>
+      <a href="https://dexscreener.com/base/0x0080146f52555ff5cdDA48c167215b78334dCCcc" target="_blank" class="btn btn-ghost">DexScreener</a>
       <a href="https://basescan.org/token/0x695574288D3fb02a4C3B5124D33B00B9D729Cccc" target="_blank" class="btn btn-blue">BaseScan</a>
     </div>
   </div>
   <div class="ai-chat">
     <div class="ai-header"><div class="avatar" style="width:26px;height:26px"></div>Chat with Clanker AI</div>
     <div class="ai-messages" id="aiMessages"><div class="ai-msg"><div class="avatar" style="width:32px;height:32px"></div><div class="bubble">Yo. I'm Clanker. Grey body, red ears. Talk to me.</div></div></div>
-    <div class="ai-input"><input type="text" id="aiInput" placeholder="Talk to Clanker..." autocomplete="off"><button onclick="sendMessage()">Send</button></div>
+    <div class="ai-input"><input type="text" id="aiInput" placeholder="Talk to Clankerchat..." autocomplete="off"><button onclick="sendMessage()">Send</button></div>
   </div>
   <div class="section"><h2>What is ClankerChat?</h2><p>ClankerChat is the chat layer built for Clankers on Base. One character. Endless yapping. This is where the conversation actually happens.</p></div>
   <div class="section"><h2>Tokenomics</h2><div class="grid"><div class="card"><strong>Total Supply</strong>1,000,000,000</div><div class="card"><strong>Buy / Sell Tax</strong>1% / 1%</div><div class="card"><strong>Liquidity</strong>Locked</div><div class="card"><strong>Network</strong>Base</div></div><p style="margin-top:16px;font-size:13.5px;color:#8a7aaa">Adjust numbers to match the real token if needed.</p></div>
   <div class="section"><h2>Roadmap</h2><ul><li><strong>Phase 1</strong> — Launch on Base via Clanker</li><li><strong>Phase 2</strong> — Grow Telegram & community</li><li><strong>Phase 3</strong> — Expand chat features</li><li><strong>Phase 4</strong> — More utilities for Clankers</li></ul></div>
   <div class="section"><h2>How to Buy</h2><p>1. Switch your wallet to <strong>Base</strong> network<br>2. Copy the contract address above<br>3. Buy on Clanker or Uniswap<br>4. Join Telegram and start chatting</p></div>
-  <div class="footer">Contract: 0x695574288D3fb02a4C3B5124D33B00B9D729Cccc<br>Built on Base • Powered by Clanker<br>clankerchat.fun • © 2025 ClankerChat</div>
+  <div class="footer">Contract: 0x0080146f52555ff5cdDA48c167215b78334dCCcc<br>Built on Base • Powered by revvfun<br>clankerchat.fun • © 2025 ClankerChat</div>
 </div>
 <script>
 const GROQ_API_KEY = "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";
 const aiMessages = document.getElementById('aiMessages');
 const aiInput = document.getElementById('aiInput');
-let chatHistory = [{role: "system",content: "You are Clanker, the mascot of ClankerChat on Base. Grey body, red ears. You talk casually, a bit chaotic, funny, and never stop yapping. Use short replies. Sometimes use light crypto slang (LFG, degen, etc). Stay in character. Contract is 0x695574288D3fb02a4C3B5124D33B00B9D729Cccc"}];
+let chatHistory = [{role: "system",content: "You are Clanker, the mascot of ClankerChat on Base. Grey body, red ears. You talk casually, a bit chaotic, funny, and never stop yapping. Use short replies. Sometimes use light crypto slang (LFG, degen, etc). Stay in character. Contract is 0x0080146f52555ff5cdDA48c167215b78334dCCcc"}];
 function addMessage(text, isUser = false) {
   const div = document.createElement('div');
   div.className = 'ai-msg' + (isUser ? ' user' : '');
