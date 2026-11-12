@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClankerChat - Talk to Clanker on Base</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:monospace;padding:20px}
+.container{max-width:900px;margin:0 auto}
+.header{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid #333}
+.logo{font-size:24px;font-weight:900;color:#00D4FF}
+.ca-box{background:#111;border:1px solid #00D4FF;padding:12px;border-radius:8px;display:flex;justify-content:space-between;align-items:center;margin:20px 0;word-break:break-all}
+.btn{background:#00D4FF;color:#000;padding:8px 16px;border:none;border-radius:6px;font-weight:800;cursor:pointer}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.links a{background:#111;border:1px solid #333;padding:10px 15px;border-radius:8px;color:#fff;text-decoration:none}
+.chat{background:#111;border:1px solid #333;border-radius:12px;padding:15px;margin-top:20px;height:400px;display:flex;flex-direction:column}
+#aiMessages{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:10px}
+.ai-msg{display:flex;gap:10px}.bubble{background:#222;padding:10px 14px;border-radius:12px;max-width:80%}
+.ai-msg.user{justify-content:flex-end}.ai-msg.user .bubble{background:#00D4FF;color:#000}
+.input-row{display:flex;gap:10px;margin-top:10px}
+#aiInput{flex:1;background:#000;border:1px solid #333;color:#fff;padding:12px;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">CLANKERCHAT</div>
+    <div>Base Mainnet</div>
+  </div>
+  <div class="ca-box">
+    <span id="caText">0x7b44ad7985b6d1305De064C16fe5eC3B0a9BCCcC</span>
+    <button class="btn" onclick="copyCA()">COPY</button>
+  </div>
+  <div class="links">
+    <a href="https://www.clanker.world/clanker/0x7b44ad7985b6d1305De064C16fe5eC3B0a9BCCcC" target="_blank">Clanker World</a>
+    <a href="https://basescan.org/token/0x7b44ad7985b6d1305De064C16fe5eC3B0a9BCCcC" target="_blank">Basescan</a>
+    <a href="https://dexscreener.com/base/0x7b44ad7985b6d1305De064C16fe5eC3B0a9BCCcC" target="_blank">Dexscreener</a>
+    <a href="https://x.com/clankerchatclub" target="_blank">X</a>
+    <a href="https://t.me/clankerchatclub" target="_blank">Telegram</a>
+  </div>
+  <div class="chat">
+    <div id="aiMessages">
+      <div class="ai-msg"><div class="bubble">Yo I'm Clanker! CA: 0x7b44...BCCcC - Ask me anything!</div></div>
+    </div>
+    <div class="input-row">
+      <input id="aiInput" placeholder="Gm Clanker..." onkeydown="if(event.key==='Enter')sendMessage()">
+      <button class="btn" onclick="sendMessage()">SEND</button>
+    </div>
+  </div>
+</div>
+<script>
+const CA = "0x7b44ad7985b6d1305De064C16fe5eC3B0a9BCCcC";
+function copyCA(){navigator.clipboard.writeText(CA);alert('Copied: '+CA)}
+async function sendMessage(){
+  const i=document.getElementById('aiInput');const t=i.value.trim();if(!t)return;
+  const b=document.getElementById('aiMessages');b.innerHTML+=`<div class="ai-msg user"><div class="bubble">${t}</div></div>`;i.value='';b.scrollTop=b.scrollHeight;
+  try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:[{role:'user',content:t}]})});const d=await r.json();b.innerHTML+=`<div class="ai-msg"><div class="bubble">${d.reply}</div></div>`;}catch(e){b.innerHTML+=`<div class="ai-msg"><div class="bubble">Error ${e.message}</div></div>`;}b.scrollTop=b.scrollHeight;
+}
+</script>
+</body>
+</html>
